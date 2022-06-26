@@ -1,0 +1,190 @@
+.App{
+    display: flex;
+    min-height: 100vh;
+    background: -webkit-radial-gradient(#777, #000);
+    color: #ffffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://preview.redd.it/eg7w8d3e6rhz.png?auto=webp&s=9d807b0e0813ce702c80716e77038514253dc582);
+    background-size: cover;
+    border-bottom: 2px solid #fff;
+}
+.title{
+    font-family: 'Lobster', cursive;
+    font-weight: 500;
+    padding: 20px;
+}
+.div-principal{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.form-search{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.input-search{
+    border: none;
+    width: 60%;
+    background-color: #1d1d1db7;
+    color: #fff;
+    font-size: 20px;
+}
+.btn-search{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #1dc05b;
+    border: none;
+    border-radius: 4px;
+}
+.btn-search:hover{
+    cursor: pointer;
+    background-color: #148b42;
+    transition: 0.7s;
+}
+.location-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    font-size: 11px;
+}
+.location-ul li span{
+    font-weight: 700;
+}
+.residents{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+.resident-card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 350px;
+    background-color: #242323be;
+    border-radius: 10px;
+}
+.resident-img{
+    height: 50%;
+    border-radius: 10px;
+}
+.resident-container-description{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.resident-name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.resident-description{
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.resident-container-description-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.resident-subtitle{
+    font-size: 11px;
+    color: #a89985;
+}
+.resident-description-description{
+    font-size: 13px;
+    font-weight: 400;
+}
+.resident-status{
+    width: 20px;
+    height: 20px;
+    background-color: #b12a08;
+    border-radius: 50%;
+}
+
+@media (min-width: 600px){
+    .resident-card{
+        flex-direction: row;
+        gap: 20px;
+        width: 450px;
+        height: 250px;
+    }
+    .resident-img{
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 350px){
+    .resident-card{
+        gap: 20px;
+        width: 200px;
+    }
+    .resident-img{
+        height: 50%;
+        border-radius: 10px;
+    }
+    
+}
+
+.pagination-container{
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    margin: 0 auto;
+}
+.pagination-prev-next{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1dc05b; 
+    border-radius: 8px;
+}
+.pagination-number-container{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+.pagination-number{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.page-active{
+    background-color: #1dc05b; 
+}
